@@ -1,0 +1,172 @@
+body{
+            background: #c58989;
+            margin: 0;
+          }
+          .table{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          }
+          
+          .plate{
+            position: relative;
+            width: 30em;
+            max-width: 80vmin;
+            height: 30em;
+            max-height: 80vmin;
+            top: 2vmin;
+            overflow: hidden;
+            background-color: white;
+            border-radius: 50%;
+            transform: rotateX(-45deg);
+            box-shadow: -10px 10px 5px grey;
+          }
+          
+            .plate-inner{
+              position: relative;
+              border: 10px dotted #d6eff1;
+              width: 80%;
+              height: 80%;
+              border-radius: 50%;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+              box-shadow: inset 10px -2px 5px 10px #e8e3e3;
+            }
+          
+          .toast-shadow{
+              z-index: 1;
+              position: absolute;
+              top: 16vmin;
+              left: 8vmin;
+              height: 20em;
+            max-height: 66vmin;
+              width: 20em;
+            max-width: 66vmin;
+              background: linear-gradient(45deg, #f3c4a247, #bf8256);
+              border-radius: 20% 22% 13% 11%;
+              transform: rotateX(-45deg);
+              animation-duration: 3s;
+              animation-name: floatytoastshadow;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in-out;
+          }
+          @keyframes floatytoast{
+            50%{
+              transform: rotateX(-45deg)  rotateY(-15deg) translate(-5em, -5rem);
+            }
+          }
+          
+          @keyframes floatytoastshadow{
+            50%{
+              transform: rotateX(-25deg)   translate(-5rem, -5rem);
+              opacity: .1;
+              top: 9rem;
+            }
+          }
+          
+          .toast{
+            position: absolute;
+            overflow: hidden;
+            height: 20em;
+            max-height: 66vmin;
+              width: 20em;
+            max-width: 66vmin;
+            background: linear-gradient(45deg, #bf8256,#bf8256);
+            border-radius: 20% 22% 13% 11%;
+            border: 4px solid #bf8256;
+            transform: rotateX(-45deg) ;
+             animation-duration: 3s;
+            animation-name: floatytoast;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+          
+          .toast-inner{
+              
+            position: relative;
+            height: 20em;
+            max-height: 66vmin;
+              width: 20em;
+            max-width: 66vmin;
+            background: #ffe4d0;
+            border-radius: 20% 22% 15% 12%;
+            border: 4px solid #bf8256;
+            box-shadow: inset 0 0 40px 10px #bf8256;
+            top: -4em;
+            left: -4px;
+          }
+          
+          .egg-shadow{
+              z-index: 1;
+              position: absolute;
+              width: 15em;
+              top: 0rem;
+              left: 3rem;
+              height: 20em;
+              background: linear-gradient(45deg, #f3c4a247, #bf8256);
+              border-radius: 65% 99% 77% 90%;
+              transform: rotateX(-65deg);
+              animation-duration: 3s;
+              animation-name: floatyeggshadow;
+              animation-iteration-count: infinite;
+              animation-timing-function: ease-in-out;
+              background-blend-mode: multiply;
+          }
+          
+          @keyframes floatyeggshadow{
+            50%{
+              transform: rotateX(-35deg)  translate(10rem, -10rem);
+              opacity: .1;
+            }
+          }
+          
+          @keyframes floatyegg{
+            50%{
+              transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+            }
+          }
+          
+          .egg{
+              position: absolute;
+              z-index: 1;
+              transform: rotateX(-35deg) translate(1rem, -3rem);
+            animation-duration: 3s;
+            animation-name: floatyegg;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+          .eggwhite{
+            width: 15em;
+            max-width: 50vmin;
+            height: 8em;
+            max-height: 40vmin;
+            background: linear-gradient(45deg, #fff6d6, #fff);
+            border-radius: 65% 99% 77% 90%;
+            box-shadow: -5px 5px 1px #e6dcb8;  
+          }
+          
+          .eggyolk{
+            position: relative;
+            width: 5.5em;
+            max-width: 30vmin;
+            height: 5.5em;
+            max-height: 30vmin;
+            border-radius: 80%;
+            background: radial-gradient(closest-side at 60% 45%, #f9c91a, #f9a01a);
+            position: relative;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%,-65%) rotateX(-35deg);
+             box-shadow: -5px 5px 1px #e0cf92;
+            animation-duration: 3s;
+            animation-name: shiny;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+          }
+          @keyframes shiny{
+            50%{
+              transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+            }
+          }

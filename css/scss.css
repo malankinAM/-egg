@@ -1,0 +1,250 @@
+body {
+  background: #c58989;
+  margin: 0;
+}
+
+.table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.plate {
+  position: relative;
+  width: 30em;
+  max-width: 80vmin;
+  height: 30em;
+  max-height: 80vmin;
+  top: 2vmin;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-box-shadow: -10px 10px 5px grey;
+          box-shadow: -10px 10px 5px grey;
+}
+
+.plate-inner {
+  position: relative;
+  border: 10px dotted #d6eff1;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-shadow: inset 10px -2px 5px 10px #e8e3e3;
+          box-shadow: inset 10px -2px 5px 10px #e8e3e3;
+}
+
+.toast-shadow {
+  z-index: 1;
+  position: absolute;
+  top: 16vmin;
+  left: 8vmin;
+  height: 20em;
+  max-height: 66vmin;
+  width: 20em;
+  max-width: 66vmin;
+  background: linear-gradient(45deg, rgba(243, 196, 162, 0.2784313725), #bf8256);
+  border-radius: 20% 22% 13% 11%;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: floatytoastshadow;
+          animation-name: floatytoastshadow;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes floatytoast {
+  50% {
+    -webkit-transform: rotateX(-45deg) rotateY(-15deg) translate(-5em, -5rem);
+            transform: rotateX(-45deg) rotateY(-15deg) translate(-5em, -5rem);
+  }
+}
+
+@keyframes floatytoast {
+  50% {
+    -webkit-transform: rotateX(-45deg) rotateY(-15deg) translate(-5em, -5rem);
+            transform: rotateX(-45deg) rotateY(-15deg) translate(-5em, -5rem);
+  }
+}
+@-webkit-keyframes floatytoastshadow {
+  50% {
+    -webkit-transform: rotateX(-25deg) translate(-5rem, -5rem);
+            transform: rotateX(-25deg) translate(-5rem, -5rem);
+    opacity: 0.1;
+    top: 9rem;
+  }
+}
+@keyframes floatytoastshadow {
+  50% {
+    -webkit-transform: rotateX(-25deg) translate(-5rem, -5rem);
+            transform: rotateX(-25deg) translate(-5rem, -5rem);
+    opacity: 0.1;
+    top: 9rem;
+  }
+}
+.toast {
+  position: absolute;
+  overflow: hidden;
+  height: 20em;
+  max-height: 66vmin;
+  width: 20em;
+  max-width: 66vmin;
+  background: linear-gradient(45deg, #bf8256, #bf8256);
+  border-radius: 20% 22% 13% 11%;
+  border: 4px solid #bf8256;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: floatytoast;
+          animation-name: floatytoast;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.toast-inner {
+  position: relative;
+  height: 20em;
+  max-height: 66vmin;
+  width: 20em;
+  max-width: 66vmin;
+  background: #ffe4d0;
+  border-radius: 20% 22% 15% 12%;
+  border: 4px solid #bf8256;
+  -webkit-box-shadow: inset 0 0 40px 10px #bf8256;
+          box-shadow: inset 0 0 40px 10px #bf8256;
+  top: -4em;
+  left: -4px;
+}
+
+.egg-shadow {
+  z-index: 1;
+  position: absolute;
+  width: 15em;
+  top: 0rem;
+  left: 3rem;
+  height: 20em;
+  background: linear-gradient(45deg, rgba(243, 196, 162, 0.2784313725), #bf8256);
+  border-radius: 65% 99% 77% 90%;
+  -webkit-transform: rotateX(-65deg);
+          transform: rotateX(-65deg);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: floatyeggshadow;
+          animation-name: floatyeggshadow;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  background-blend-mode: multiply;
+}
+
+@-webkit-keyframes floatyeggshadow {
+  50% {
+    -webkit-transform: rotateX(-35deg) translate(10rem, -10rem);
+            transform: rotateX(-35deg) translate(10rem, -10rem);
+    opacity: 0.1;
+  }
+}
+
+@keyframes floatyeggshadow {
+  50% {
+    -webkit-transform: rotateX(-35deg) translate(10rem, -10rem);
+            transform: rotateX(-35deg) translate(10rem, -10rem);
+    opacity: 0.1;
+  }
+}
+@-webkit-keyframes floatyegg {
+  50% {
+    -webkit-transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+            transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+  }
+}
+@keyframes floatyegg {
+  50% {
+    -webkit-transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+            transform: rotateX(-35deg) rotate(-35deg) translate(15rem, -10rem);
+  }
+}
+.egg {
+  position: absolute;
+  z-index: 1;
+  -webkit-transform: rotateX(-35deg) translate(1rem, -3rem);
+          transform: rotateX(-35deg) translate(1rem, -3rem);
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: floatyegg;
+          animation-name: floatyegg;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.eggwhite {
+  width: 15em;
+  max-width: 50vmin;
+  height: 8em;
+  max-height: 40vmin;
+  background: linear-gradient(45deg, #fff6d6, #fff);
+  border-radius: 65% 99% 77% 90%;
+  -webkit-box-shadow: -5px 5px 1px #e6dcb8;
+          box-shadow: -5px 5px 1px #e6dcb8;
+}
+
+.eggyolk {
+  position: relative;
+  width: 5.5em;
+  max-width: 30vmin;
+  height: 5.5em;
+  max-height: 30vmin;
+  border-radius: 80%;
+  background: radial-gradient(closest-side at 60% 45%, #f9c91a, #f9a01a);
+  position: relative;
+  top: 50%;
+  left: 55%;
+  -webkit-transform: translate(-50%, -65%) rotateX(-35deg);
+          transform: translate(-50%, -65%) rotateX(-35deg);
+  -webkit-box-shadow: -5px 5px 1px #e0cf92;
+          box-shadow: -5px 5px 1px #e0cf92;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: shiny;
+          animation-name: shiny;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes shiny {
+  50% {
+    -webkit-transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+            transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+  }
+}
+
+@keyframes shiny {
+  50% {
+    -webkit-transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+            transform: rotateX(-35deg) rotate(-35deg) translate(1rem, -4rem);
+  }
+}
